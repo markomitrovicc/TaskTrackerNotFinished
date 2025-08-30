@@ -1,6 +1,11 @@
-@TaskTracker_HostAddress = http://localhost:5288
+@rootURL = http://localhost:5288
 
-GET {{TaskTracker_HostAddress}}/weatherforecast/
+GET {{rootURL}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{rootURL}}/api/Tasks/
 Accept: application/json
 
 ###
